@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+   
+
+    .cart-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #8B4513;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    
+
+    main {
+      max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+    }
+
+    .image-container {
+     
+      
+      margin: 5px;
+      overflow: hidden;
+      position: relative;
+      width: auto;
+      height: 100%;
+      margin-bottom: 20px;
+       transition: 0.5s;
+      
+       height: 400px;
+      margin: 10px;
+    }
+
+    
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+   
+
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+   
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    
+  </style>
+  <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+  <header>
+    <br>
+    <button class="cart-button" onclick="location.href='cart.html'"><i class="fas fa-shopping-cart"></i></button>
+    <div class="logo" align="center" >
+     <!-- <img src="favicon.jpg" alt="Your Logo"  style="width: 800px; height: 300px;  background-blend-mode: color-burn; padding: 1em;">
+    </div>
+   
+    <img src="Arslogo.png" alt="This is a hoodie" class="image" width="0.1%" height="20px">-->
+    <h1 style="font-size: 70px;"><a href="IICTProject.html">أرس</h1>
+    <p  style="font-family: clicker-script; font-size: 20px;"  >Revitalizing Pakistani Street Culture</p></a>
+    
+    <nav class="navbar">
+        <ul><b>
+    <li class="dropdown"><a href="men.html" style="font-size: 19px;">Men</a>
+      <div class="dropdown-content">
+        <a href="men.html">Men Unstitched</a>
+        <a href="men.html">Shalwar Kameez</a>
+        <a href="men.html">Kurta</a>
+        <a href="men.html">Festive Men waistcoat</a>
+      </div>
+    </li>
+
+   
+    <li class="dropdown"><a href="women.html" style="font-size: 19px;">Women</a>
+      <div class="dropdown-content">
+        <a href="women.html">Embroided</a>
+        <a href="women.html">Luxury Pret</a>
+        <a href="women.html">Unstitched</a>
+        <a href="women.html">Winter 2.0</a>
+      </div>
+    </li>
+
+    <li class="dropdown"><a href="accessories.html" style="font-size: 19px;">Accessories</a>
+      <div class="dropdown-content">
+        <a href="accessories.html">Necklace</a>
+        <a href="accessories.html">Earrings</a>
+        <a href="accessories.html">Belts</a>
+      </div>
+    </li>
+
+    <li class="dropdown"><a href="winter.html" style="font-size: 19px;">Winter</a>
+      <div class="dropdown-content">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+    </li>
+
+    <li class="dropdown"><a href="sale.html" style="font-size: 19px;">Sale</a>
+      <div class="dropdown-content">
+        <a href="sale.html">Hoodies</a>
+        <a href="sale.html">Pants</a>
+        <a href="sale.html">Shalwar Kameez</a>
+      </div>
+    </li>
+    <li class="dropdown"><a href="men.html" style="font-size: 19x;">New Arrival</a>
+    
+      <div class="dropdown-content">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+     </li>
+     
+     <li class="fa fa-shopping-cart" style="font-size:36px"></li>
+    </b></ul>
+    
+    </nav>
+
+   
+      
+    
+    <!-- home, about us, products, contacts-->
+</header>
+
+  <main>
+    
+    <div class="image-container">
+      <img src="3pc10.png" alt="Image 1">
+      <div class="overlay">
+        <p>Color: Navy Blue</p>
+        <p>Price: Rs 2000</p>
+        <div class="options">
+          <button onclick="addToCart('Shalwar Kameez', 2000)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="3pc9.png" alt="Image 1">
+      <div class="overlay">
+        <p>Color: Blue</p>
+        <p>Price: Rs 2350</p>
+        <div class="options">
+          <button onclick="addToCart('Image 1', 50)">Add to Cart</button>
+        </div>
+      </div>
+    </div><div class="image-container">
+      <img src="3pc1.png" alt="Image 1">
+      <div class="overlay">
+        <p>Color: Pink Jacquard</p>
+        <p>Price: Rs 8299</p>
+        <div class="options">
+          <button onclick="addToCart('Image 1', 50)">Add to Cart</button>
+        </div>
+      </div>
+    </div><div class="image-container">
+      <img src="3pc12.png" alt="Image 1">
+      <div class="overlay">
+        <p>Color: Tomato Red</p>
+        <p>Price: Rs 3200</p>
+        <div class="options">
+          <button onclick="addToCart('Image 1', 50)">Add to Cart</button>
+        </div>
+      </div>
+    </div><div class="image-container">
+      <img src="3pc13.png" alt="Image 1">
+      <div class="overlay">
+        <p>Color: Black</p>
+        <p>Price: Rs 7000</p>
+        <div class="options">
+          <button onclick="addToCart('Image 1', 50)">Add to Cart</button>
+        </div>
+      </div>
+    </div><div class="image-container">
+      <img src="3pc2.png" alt="Image 1">
+      <div class="overlay">
+        <p>Color: Blue and White</p>
+        <p>Price: Rs 4500</p>
+        <div class="options">
+          <button onclick="addToCart('Image 1', 50)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- Add more image containers as needed -->
+
+  </main>
+
+  <div id="footercontent">   
+          
+    <aside>
+      <h2>Contact Info</h2>
+      
+          Call Us: 0123456789 <br>
+          Email: <a href="mailto:ARS@gmailcom">ARS@gmail.com</a><br>
+          &copy; Copyright Reserved
+      
+  </aside>
+          <aside>
+              <h2>Information</h2>
+              
+                  <a href="">About Us</a>
+                  <a href="">Shipping & Information</a>
+                  <a href="">Store Locator</a>
+                  <a href="">Terms & Conditions</a>
+                  <a href="">Wholesale</a>
+              </ul>
+          </aside>
+          
+          <aside>
+              <h2>Customer Support</h2>
+              
+                  <a href="">Contact Us</a> <br>
+                  <a href="">Privacy Policy</a> <br>
+                  <a href="">Return & Exchange</a> <br>
+                  <a href="">FAQ's</a> <br>
+                 
+              </ul>
+          </aside>
+          
+          <aside>
+              <br>
+              <h3>NEWSLETTER SIGNUP</h3><br>
+      <form>
+          <label for="Email">Email:</label>
+          <input type="text" id="email">       
+          <button id="Submitbutton" align="center">Submit</button>
+      </form></aside>
+    </div>
+  
+  
+  <br>
+  <footer class="footer" align="center">
+    © 2023 ARS. All Rights Reserved. Designed & Developed by Mean3 Pvt Ltd.
+  </footer>
+  
+
+  <script>
+    // Function to add items to the cart
+    function addToCart(itemName, price) {
+      // Retrieve cart items from localStorage
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // Add the selected item to the cart
+      cart.push({ itemName, price });
+
+      // Update cart in localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Alert user that the item has been added to the cart
+      alert(`Added to cart: ${itemName} - Price: pkr${price}`);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!-- Main Page (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="https://www.arabiccalligraphygenerator.com/images/placeholder.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #D2B48C;
+    }
+
+    header, nav, main, footer {
+      text-align: center;
+      padding: 20px;
+      color: rgb(0, 0, 0);
+    }
+
+    header {
+      font-size: 24px;
+      font-family: 'Bukhari Script', cursive;
+      position: relative;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      border-top: 1px solid #8B4513;
+      margin: 10px 0 5px;
+    }
+
+    .cart-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #8B4513;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    nav a {
+      background-color: #8B4513;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .image-container {
+      width: calc(50% - 20px);
+      height: 400px;
+      margin: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .image-container img {
+      width: auto;
+      flex-wrap: wrap;
+      height: 100%;
+      object-fit: cover;
+      transition: filter 0.3s ease;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .options button {
+      background-color: #8B4513;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    aside {
+      width: 20%;
+      margin-bottom: 20px;
+    }
+
+    h2, h3 {
+      border-bottom: 2px solid rgb(0, 0, 0);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #8B4513;
+      color: rgb(250, 232, 232);
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Women
+    <button class="cart-button" onclick="location.href='cart.html'"><i class="fas fa-shopping-cart"></i></button>
+  </header>
+
+  <nav>
+    <a href="mens.html">Men</a>
+    <a href="women.html">Women</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="winter.html">Winter</a>
+    <a href="sale.html">Sale</a>
+    <a href="newarrival.html">New Arrival</a>
+  </nav>
+
+  <main>
+    <!-- Image Containers -->
+    <div class="image-container">
+      <img src="https://via.placeholder.com/400" alt="Image 1">
+      <div class="overlay">
+        <p>Color: Blue</p>
+        <p>Price: $50</p>
+        <div class="options">
+          <button onclick="viewDetails('Sweatshirt', 50, 'https://via.placeholder.com/400')">Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="https://via.placeholder.com/400" alt="Image 2">
+      <div class="overlay">
+        <p>Color: Red</p>
+        <p>Price: $60</p>
+        <div class="options">
+          <button onclick="viewDetails('Jacket', 60, 'https://via.placeholder.com/400')">Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more image containers as needed -->
+
+  </main>
+
+  <!-- ... (existing footer content) ... -->
+  <footer>
+    <aside>
+      <h2>Information</h2>
+      <ul>
+        <li>About Us</li>
+        <li>Shipping & Information</li>
+        <li>Store Locator</li>
+        <li>Terms & Conditions</li>
+        <li>Wholesale</li>
+      </ul>
+    </aside>
+
+    <aside>
+      <h2>Customer Support</h2>
+      <ul>
+        <li>Contact Us</li>
+        <li>Privacy Policy</li>
+        <li>Return & Exchange</li>
+        <li>FAQ's</li>
+      </ul>
+    </aside>
+
+    <aside>
+      <h2>Contact Info</h2>
+      <ul>
+        <li>Call Us: 0123456789</li>
+        <li>Email: <a href="mailto:ARS@gmailcom">ARS@gmail.com</a></li>
+        <li>&copy; Copyright Reserved</li>
+      </ul>
+    </aside>
+
+    <aside>
+      <h3>NEWSLETTER SIGNUP</h3>
+      <form>
+        <label for="Email">Email:</label>
+        <input type="text" id="email">
+        <input type="submit">
+      </form>
+    </aside>
+  </footer>
+
+  <script>
+    function viewDetails(itemName, price, imageUrl) {
+      const selectedItem = { itemName, price, imageUrl };
+      localStorage.setItem('selectedItem', JSON.stringify(selectedItem));
+      window.location.href = 'product-details.html';
+    }
+  </script>
+</body>
+</html>
