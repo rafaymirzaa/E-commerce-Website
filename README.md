@@ -1,2 +1,2 @@
 # E-commerce-Website
-Standard tech stack for pakistani representation
+Static website for pakistani brands
